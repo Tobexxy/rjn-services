@@ -144,19 +144,20 @@ color: #1457b6;}
   margin: auto;
   width: 92%; }
 
-.btn {
+.btns {
   background: #fff;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
+  text-decoration: none;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
-  .btn:hover {
+  .btns:hover {
     transform: translateY(-3px); }
-  .btn--bg {
+  .btn-bg {
     padding: 1.5rem 8rem;
     font-size: 2rem; }
   .btn--med {
@@ -178,14 +179,14 @@ color: #1457b6;}
     .sec-pad {
       padding: 8rem 0; } }
 
-.text-primary {
+.text-primar {
   color: #fff;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
   line-height: 1.6; }
   @media only screen and (max-width: 37.5em) {
-    .text-primary {
+    .text-primar {
       font-size: 2rem; } }
 
 .d-none {
@@ -573,6 +574,7 @@ color: #1457b6;}
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 2.3rem;
+    text-decoration: none;
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1743,14 +1745,14 @@ progress {
   z-index: 3;
 }
 
-.input-group-prepend .btn + .btn,
-.input-group-prepend .btn + .input-group-text,
+.input-group-prepend .btns + .btns,
+.input-group-prepend .btns + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
-.input-group-prepend .input-group-text + .btn,
-.input-group-append .btn + .btn,
-.input-group-append .btn + .input-group-text,
+.input-group-prepend .input-group-text + .btns,
+.input-group-append .btns + .btns,
+.input-group-append .btns + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
-.input-group-append .input-group-text + .btn {
+.input-group-append .input-group-text + .btns {
   margin-left: -1px;
 }
 
@@ -1794,8 +1796,8 @@ progress {
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
-.input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
+.input-group-lg > .input-group-prepend > .btns,
+.input-group-lg > .input-group-append > .btns {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1811,8 +1813,8 @@ progress {
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
-.input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
+.input-group-sm > .input-group-prepend > .btns,
+.input-group-sm > .input-group-append > .btns {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1824,21 +1826,21 @@ progress {
   padding-right: 1.75rem;
 }
 
-.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .btns,
 .input-group > .input-group-prepend > .input-group-text,
-.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .btns,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
-.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .btns:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .btns,
 .input-group > .input-group-append > .input-group-text,
-.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .btns,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .btns:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
